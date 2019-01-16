@@ -3,17 +3,19 @@
 
 Example Usage
 
+This is a recording audio use case. It will send messages to the process that 
+called the function.
 ```elixir
 %Heavy.OSX.AudioStreamBasicDescription{
     audio_format: :lpcm,
     audio_format_flags: 14,
-    bits_per_channel: 8,
-    bytes_per_frame: 0,
-    bytes_per_packet: 0,
-    channels_per_frame: 0,
+    bits_per_channel: 32,
+    bytes_per_frame: 4,
+    bytes_per_packet: 4,
+    channels_per_frame: 1,
     frames_per_packet: 1,
-    sample_rate: 0.0
-  }
+    sample_rate: 44100.0
+}|> Heavy.OSX.AudioToolBox.record_audio()
 ```
 
 ## Installation
