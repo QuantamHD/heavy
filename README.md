@@ -1,6 +1,20 @@
 # Heavy
 
-**TODO: Add description**
+
+Example Usage
+
+```elixir
+%Heavy.OSX.AudioStreamBasicDescription{
+    audio_format: :lpcm,
+    audio_format_flags: 14,
+    bits_per_channel: 8,
+    bytes_per_frame: 0,
+    bytes_per_packet: 0,
+    channels_per_frame: 0,
+    frames_per_packet: 1,
+    sample_rate: 0.0
+  }
+```
 
 ## Installation
 
